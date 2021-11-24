@@ -3,7 +3,6 @@ let counterMinusElem = document.getElementById('minus');
 let counterPlusElem = document.getElementById('plus');
 let heart = document.getElementById('heart');
 let counterPause = document.getElementById('pause');
-let comment = document.getElementById('comment-input').submit();
 
 let count = 0
 let boolPause = false
@@ -32,8 +31,8 @@ function updateDisplay(){
 };
 heart.addEventListener('click', function () {
      //document.getElementsByID('like').createElement(li)
-     var ul = document.getElementById("like");
-     var li = document.createElement("li");
+     const ul = document.getElementById("like");
+     let li = document.createElement("li");
      li.appendChild(document.createTextNode(count + " has been liked"));
      ul.appendChild(li);
 });
